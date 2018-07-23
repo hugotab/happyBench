@@ -8,17 +8,21 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>HappyBench</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
 
     <section class="header">
       <div class="row ">
         <div class="menu col-3">
+
           <div class="marque">
             <h1>HappyBench</h1>
           </div>
+
           <ul class="nav flex-column">
             <li class="nav-item">
               <a class="nav-link active" href="#">Rapport</a>
@@ -38,27 +42,183 @@
                 Telecharger le rapport
             </button>
 
-          <div class="title-timeline">
-            <div class="note">
+          <section class="cd-horizontal-timeline">
               <div class="cercle-timeline">
                 <p>A</p>
               </div>
+            <div class="timeline">
+              <div class="events-wrapper">
+                <div class="events">
+                  <ol>
+                    <li><a href="#0" data-date="01/01/2018" class="selected">Etape 1</a></li>
+                    <li><a href="#0" data-date="03/01/2018">Etape 2</a></li>
+                    <li><a href="#0" data-date="05/01/2018">Etape 3</a></li>
+                    <li><a href="#0" data-date="07/01/2018">Etape 4</a></li>
+                    <li><a href="#0" data-date="09/01/2018">Etape 5</a></li>
+                    <li><a href="#0" data-date="11/01/2018">Etape 6</a></li>
+                    <li><a href="#0" data-date="13/01/2018">Etape 7</a></li>
+                    <li><a href="#0" data-date="15/01/2018">Etape 8</a></li>
+                    <li><a href="#0" data-date="17/01/2018">Etape 9</a></li>
+                    <li><a href="#0" data-date="19/01/2018">Etape 10</a></li>
+                    <li><a href="#0" data-date="21/01/2018">Etape 11</a></li>
+                    <li><a href="#0" data-date="23/01/2018">Etape 12</a></li>
+                    <li><a href="#0" data-date="25/01/2018">Etape 13</a></li>
+                    <li><a href="#0" data-date="27/01/2018">Etape 14</a></li>
+                    <li><a href="#0" data-date="29/01/2018">Etape 15</a></li>
+                  </ol>
 
-              <!--
-                test pas timeline final
-              <div class="timeline">
-                <ul class="progressbar">
-                  <li class="active">Step 1</li>
-                  <li>Step 2</li>
-                  <li>Step 3</li>
-                </ul>
+                  <span class="filling-line" aria-hidden="true"></span>
+                </div>
               </div>
-                -->
+
+              <ul class="cd-timeline-navigation">
+                <li><a href="#0" class="prev inactive">Prev</a></li>
+                <li><a href="#0" class="next">Next</a></li>
+              </ul>
+
             </div>
-          </div>
+
+
+            <div class="events-content">
+              <ol>
+                <li class="selected" data-date="01/01/2018">
+                  <h2>Lien entre le site et les reseaux sociaux</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                  </p>
+                </li>
+
+                <li data-date="03/01/2018">
+                  <h2>Home Page</h2>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                  </p>
+                </li>
+
+                <li data-date="05/01/2018">
+                  <h2>Page Produit</h2>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                  </p>
+                </li>
+
+                <li data-date="07/01/2018">
+                  <h2>Page Personnalisation</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                  </p>
+                </li>
+
+                <li data-date="09/01/2018">
+                  <h2>Page Panier</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                  </p>
+                </li>
+
+                <li data-date="11/01/2018">
+                  <h2>Page Connection</h2>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                  </p>
+                </li>
+
+                <li data-date="13/01/2018">
+                  <h2>Page Livraison</h2>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                  </p>
+                </li>
+
+                <li data-date="15/01/2018">
+                  <h2>Page Coordonnées</h2>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                  </p>
+                </li>
+
+                <li data-date="17/01/2018">
+                  <h2>Page Paiment</h2>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                  </p>
+                </li>
+
+                <li data-date="19/01/2018">
+                  <h2>Mail Validation</h2>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                  </p>
+                </li>
+
+                <li data-date="21/01/2018">
+                  <h2>Mail Suivi</h2>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                  </p>
+                </li>
+
+                <li data-date="23/01/2018">
+                  <h2>Mail Suivi</h2>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                  </p>
+                </li>
+
+                <li data-date="25/01/2018">
+                  <h2>Réception Colis</h2>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                  </p>
+                </li>
+
+                <li data-date="27/01/2018">
+                  <h2>Unboxing</h2>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                  </p>
+                </li>
+
+                <li data-date="29/01/2018">
+                  <h2>Renvoi</h2>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                  </p>
+                </li>
+              </ol>
+            </div>
+            <!-- .events-content -->
+          </section>
 
           <div class="partage">
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+            <button type="button" class="btn btn-seg" data-toggle="button" aria-pressed="false" autocomplete="off">
               Partager votre rapport
           </button>
             <p>Envoyer votre rapport par mail à vos collaborateur</p>
@@ -77,41 +237,50 @@
             </div>
           </div>
 
+          <!-- etape lien -->
+
           <div class="etapeLien">
             <div class="cercleNoteLien">
             </div>
             <div class="resume-text">
               <h3>Lien entre le site et les reseaux sociaux</h3>
               <p>Est-il simple de trouver un produit sur le site à partir des réseaux sociaux</p>
-              <p>Le lien entre le site et les reseaux sont bien. On retrouve les produit sur les reseaux</p>
 
 
-              <div class="point">
-                <div class="positif">
-                  <p class="point-positif">Point positif</p>
-                  <ul>
-                    <li><span class="plus">+</span>Page simple d'accée</li>
-                    <li><span class="plus">+</span>Categorie clair et simple</li>
-                    <li><span class="plus">+</span>Possibiliter de filtrer les produit</li>
-                  </ul>
+              <input type="button" class="show" value="Descriptif">
+              <input type="button" class="hide" value="Fermer">
+              <div class="data">
+
+                <p>Le lien entre le site et les reseaux sont bien. On retrouve les produit sur les reseaux</p>
+
+                <div class="point">
+                  <div class="positif">
+                    <p class="point-positif">Point positif</p>
+                    <ul>
+                      <li><span class="plus">+</span>Page simple d'accée</li>
+                      <li><span class="plus">+</span>Categorie clair et simple</li>
+                      <li><span class="plus">+</span>Possibiliter de filtrer les produit</li>
+                    </ul>
+                  </div>
+                  <div class="negatif">
+                    <p class="point-negatif">Point negatif</p>
+                    <ul>
+                      <li><span class="moins">-</span>On ne vois pas les prix directementsur instagram</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="negatif">
-                  <p class="point-negatif">Point negatif</p>
-                  <ul>
-                    <li><span class="moins">-</span>On ne vois pas les prix directementsur instagram</li>
-                  </ul>
-                </div>
-              </div>
 
-              <div class="screenInsta">
-                <img src="img\Screenshot_ASOS.jpg" alt="screenAsos">
-                <div class="screen_point">
-                  <p><span class="plus">+</span>Possibilter de voir la référence directement sur instagram</p>
+                <div class="screenInsta">
+                  <img src="img\Screenshot_ASOS.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Possibilter de voir la référence directement sur instagram</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- Page Home -->
 
           <div class="etapeHome">
             <div class="cercleNoteHome">
@@ -119,45 +288,664 @@
             <div class="resume-text">
               <h3>HomePage</h3>
               <p>La home page est elle clair est intuitive</p>
-              <p>Le choix des produits sur le site Asos est rapide. En haut sur la page d'accueil on retrouve un accé au "catégorie" Ce qui amené directement sur une page avec l'ensemble des catégorie disponible sur le site. Lors d'un clic sur une catégorie
-                on y retrouve l'ensemble des "sous catégorie" (ex: Categorie vetement -> emsemble des categories de vetement). Après avoir choisi le type de vetement, on trouve l'ensemble des produit.
-              </p>
+
+              <input type="button" class="show" value="Descriptif">
+              <input type="button" class="hide" value="Fermer">
+              <div class="data">
+
+                <p>Le choix des produits sur le site Asos est rapide. En haut sur la page d'accueil on retrouve un accé au "catégorie" Ce qui amené directement sur une page avec l'ensemble des catégorie disponible sur le site. Lors d'un clic sur une catégorie
+                  on y retrouve l'ensemble des "sous catégorie" (ex: Categorie vetement -> emsemble des categories de vetement). Après avoir choisi le type de vetement, on trouve l'ensemble des produit.
+                </p>
 
 
-              <div class="point">
-                <div class="positif">
-                  <p class="point-positif">Point positif</p>
-                  <ul>
-                    <li><span class="plus">+</span>Page simple d'accée</li>
-                    <li><span class="plus">+</span>Categorie clair et simple</li>
-                    <li><span class="plus">+</span>Possibiliter de filtrer les produit</li>
-                  </ul>
+                <div class="point">
+                  <div class="positif">
+                    <p class="point-positif">Point positif</p>
+                    <ul>
+                      <li><span class="plus">+</span>Page simple d'accée</li>
+                      <li><span class="plus">+</span>Categorie clair et simple</li>
+                      <li><span class="plus">+</span>Possibiliter de filtrer les produit</li>
+                    </ul>
+                  </div>
+                  <div class="negatif">
+                    <p class="point-negatif">Point negatif</p>
+                    <ul>
+                      <li><span class="moins">-</span>Page un peu brouillon</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="negatif">
-                  <p class="point-negatif">Point negatif</p>
-                  <ul>
-                    <li><span class="moins">-</span>Page un peu brouillon</li>
-                  </ul>
+
+                <div class="screenHome">
+                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
+                  </div>
+                </div>
+
+                <div class="screenHomeReduc">
+                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Souvant des réductions</p>
+                  </div>
                 </div>
               </div>
-
-              <div class="screenHome">
-                <img src="img\Screenshot_Home.jpg" alt="screenAsos">
-                <div class="screen_point">
-                  <p><span class="plus">+</span>Catégorie simple d'accée</p>
-                </div>
-              </div>
-
-              <div class="screenHomeReduc">
-                <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
-                <div class="screen_point">
-                  <p><span class="plus">+</span>Souvant des réductions</p>
-                </div>
-
-
             </div>
           </div>
+
+          <!-- Page Produit -->
+
+          <div class="pageProduit">
+            <div class="cercleNotePageProduit">
+            </div>
+            <div class="resume-text">
+              <h3>Page Produit</h3>
+              <p>La page produit est elle complète avec tout les informations utiles</p>
+
+              <input type="button" class="show" value="Descriptif">
+              <input type="button" class="hide" value="Fermer">
+              <div class="data">
+
+                <p>Une page complète avec beaucoup de produit. De nombreu filtre qui facilite les recherches</p>
+
+
+                <div class="point">
+                  <div class="positif">
+                    <p class="point-positif">Point positif</p>
+                    <ul>
+                      <li><span class="plus">+</span>Page simple</li>
+                      <li><span class="plus">+</span>Filtre Complet</li>
+                    </ul>
+                  </div>
+                  <div class="negatif">
+                    <p class="point-negatif">Point negatif</p>
+                    <ul>
+                      <li><span class="moins">-</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="screenHome">
+                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
+                  </div>
+                </div>
+
+                <div class="screenHomeReduc">
+                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Souvant des réductions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page Personnalisation -->
+
+          <div class="pagePersonnalisation">
+            <div class="cercleNotePersonnalisation">
+            </div>
+            <div class="resume-text">
+              <h3>Page Personnalisation</h3>
+              <p>Retrouve t'on l'ensemeble des informations utiles comment les tailles, un descriptif du produit.</p>
+              <input type="button" class="show" value="Descriptif">
+              <input type="button" class="hide" value="Fermer">
+              <div class="data">
+
+                <p>On peux retrouver un guide des tailles complète. Un desciptif du produit. Les photos sont clair et il y a aussi une vidéo qui montre le produit. Il y a aussi des propositions de produit pertinant.</p>
+
+
+                <div class="point">
+                  <div class="positif">
+                    <p class="point-positif">Point positif</p>
+                    <ul>
+                      <li><span class="plus">+</span>Guide des tailles complète</li>
+                      <li><span class="plus">+</span>Descriptif complète</li>
+                      <li><span class="plus">+</span>Une video pour montrer le produit</li>
+                    </ul>
+                  </div>
+                  <div class="negatif">
+                    <p class="point-negatif">Point negatif</p>
+                    <ul>
+                      <li><span class="moins">-</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="screenHome">
+                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
+                  </div>
+                </div>
+
+                <div class="screenHomeReduc">
+                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Souvant des réductions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page Panier -->
+
+          <div class="pagePanier">
+            <div class="cercleNotePanier">
+            </div>
+            <div class="resume-text">
+              <h3>Page Panier</h3>
+              <p>Le panier est-il complet retrouve t'on tout les produit</p>
+
+              <input type="button" class="show" value="Descriptif">
+              <input type="button" class="hide" value="Fermer">
+              <div class="data">
+
+                <p>On retrouve l'ensemble des produit mis dans le panier. Voir le total du prix des produits. Possibiliter de suprimer un produit ou de le mettre de coté. On peut aussi modifier la taille et la quantitier depuis le panier.</p>
+
+
+                <div class="point">
+                  <div class="positif">
+                    <p class="point-positif">Point positif</p>
+                    <ul>
+                      <li><span class="plus">+</span>Modifier la taille</li>
+                      <li><span class="plus">+</span>Modifier la quantitier</li>
+                      <li><span class="plus">+</span>Voir le pric total </li>
+                    </ul>
+                  </div>
+                  <div class="negatif">
+                    <p class="point-negatif">Point negatif</p>
+                    <ul>
+                      <li><span class="moins">-</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="screenHome">
+                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
+                  </div>
+                </div>
+
+                <div class="screenHomeReduc">
+                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Souvant des réductions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page Connection -->
+
+          <div class="pageConnection">
+            <div class="cercleNoteConnection">
+            </div>
+            <div class="resume-text">
+              <h3>Page Connection</h3>
+              <p>La connection et l'inscription est elle simple</p>
+
+              <input type="button" class="show" value="Descriptif">
+              <input type="button" class="hide" value="Fermer">
+              <div class="data">
+
+                <p>Pour se créer un compte il y a la possibilter d'utilisé les réseaux comme Facebook ou Twitter. On puet directement se connecter avec un compte google. Il y a aussi un forum classique pour créer son compte. </p>
+
+
+                <div class="point">
+                  <div class="positif">
+                    <p class="point-positif">Point positif</p>
+                    <ul>
+                      <li><span class="plus">+</span>Inscription avec les reseaux sociaux</li>
+                      <li><span class="plus">+</span>Simple et rapide</li>
+                    </ul>
+                  </div>
+                  <div class="negatif">
+                    <p class="point-negatif">Point negatif</p>
+                    <ul>
+                      <li><span class="moins">-</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="screenHome">
+                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
+                  </div>
+                </div>
+
+                <div class="screenHomeReduc">
+                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Souvant des réductions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page Livraison -->
+
+          <div class="pageLivraison">
+            <div class="cercleNoteLivraion">
+            </div>
+            <div class="resume-text">
+              <h3>Page Livraison</h3>
+              <p>Il y a plusieur possibilter de livraison ?</p>
+
+              <input type="button" class="show" value="Descriptif">
+              <input type="button" class="hide" value="Fermer">
+              <div class="data">
+
+                <p>Pour la livraison il y a plusieur possibilter avec un prix different par rapport à leur vitesse arriver.</p>
+
+                <div class="point">
+                  <div class="positif">
+                    <p class="point-positif">Point positif</p>
+                    <ul>
+                      <li><span class="plus">+</span>Plusieur choix possible</li>
+                    </ul>
+                  </div>
+                  <div class="negatif">
+                    <p class="point-negatif">Point negatif</p>
+                    <ul>
+                      <li><span class="moins">-</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="screenHome">
+                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
+                  </div>
+                </div>
+
+                <div class="screenHomeReduc">
+                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Souvant des réductions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page Coordonnées -->
+
+          <div class="pageCoordonnées">
+            <div class="cercleNoteCoordonnés">
+            </div>
+            <div class="resume-text">
+              <h3>Page Coordonnées</h3>
+              <p>Ajout de coordonnés est-il simple. Est-il possible de réutiliser les coordonnés.</p>
+
+              <input type="button" class="show" value="Descriptif">
+              <input type="button" class="hide" value="Fermer">
+              <div class="data">
+
+                <p>Posssible de mettre des coordonnés et les enregistrer pour les utiliser plusieur fois</p>
+
+
+                <div class="point">
+                  <div class="positif">
+                    <p class="point-positif">Point positif</p>
+                    <ul>
+                      <li><span class="plus">+</span>Sélection simple d'une address déjà utilisé</li>
+                      <li><span class="plus">+</span>Ajout simple et rapide</li>
+                    </ul>
+                  </div>
+                  <div class="negatif">
+                    <p class="point-negatif">Point negatif</p>
+                    <ul>
+                      <li><span class="moins">-</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="screenHome">
+                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
+                  </div>
+                </div>
+
+                <div class="screenHomeReduc">
+                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Souvant des réductions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page Paiment -->
+
+          <div class="pagePaiment">
+            <div class="cercleNotePaiment">
+            </div>
+            <div class="resume-text">
+              <h3>Page Paiment</h3>
+              <p>Plusieur moyen de paiment disponible et réutilisation possible.</p>
+
+              <input type="button" class="show" value="Descriptif">
+              <input type="button" class="hide" value="Fermer">
+              <div class="data">
+
+                <p>On retrouve plusieur moyen de paiment et on peut enregistrer plusieur moyen de paiment.</p>
+
+                <div class="point">
+                  <div class="positif">
+                    <p class="point-positif">Point positif</p>
+                    <ul>
+                      <li><span class="plus">+</span>Plusieur moyen de paiment</li>
+                      <li><span class="plus">+</span>Enregistrer plusieur moyen de paiment</li>
+                    </ul>
+                  </div>
+                  <div class="negatif">
+                    <p class="point-negatif">Point negatif</p>
+                    <ul>
+                      <li><span class="moins">-</span>Page un peu brouillon</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="screenHome">
+                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
+                  </div>
+                </div>
+
+                <div class="screenHomeReduc">
+                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Souvant des réductions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page mailValidation -->
+
+          <div class="mailValidation">
+            <div class="cercleNoteMailValidation">
+            </div>
+            <div class="resume-text">
+              <h3>Mail Validation</h3>
+              <p>Recoi t'on un mail après une commande</p>
+
+              <input type="button" class="show" value="Descriptif">
+              <input type="button" class="hide" value="Fermer">
+              <div class="data">
+
+                <p>Mail complet avec les informations sur la commande. On peut retrouver nos information tel que l'adress d'envoi. Et aussi l'ensemble du panier</p>
+
+
+                <div class="point">
+                  <div class="positif">
+                    <p class="point-positif">Point positif</p>
+                    <ul>
+                      <li><span class="plus">+</span>Mail complet</li>
+                    </ul>
+                  </div>
+                  <div class="negatif">
+                    <p class="point-negatif">Point negatif</p>
+                    <ul>
+                      <li><span class="moins">-</span>Page un peu brouillon</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="screenHome">
+                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
+                  </div>
+                </div>
+
+                <div class="screenHomeReduc">
+                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Souvant des réductions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page mailSuivi -->
+
+          <div class="mailSuivi">
+            <div class="cercleNoteMailSuivi">
+            </div>
+            <div class="resume-text">
+              <h3>Mail Suivi</h3>
+              <p>Il y a la possibilter de suivre l'avancer du colis ?</p>
+
+              <input type="button" class="show" value="Descriptif">
+              <input type="button" class="hide" value="Fermer">
+              <div class="data">
+
+                <p>Mail qui donne les coordonnés du colis avec la possibilter de suivre l'avancer du colis.</p>
+
+                <div class="point">
+                  <div class="positif">
+                    <p class="point-positif">Point positif</p>
+                    <ul>
+                      <li><span class="plus">+</span>Voir l'avancer du colis</li>
+                    </ul>
+                  </div>
+                  <div class="negatif">
+                    <p class="point-negatif">Point negatif</p>
+                    <ul>
+                      <li><span class="moins">-</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="screenHome">
+                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
+                  </div>
+                </div>
+
+                <div class="screenHomeReduc">
+                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Souvant des réductions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page RéceptionColis -->
+
+          <div class="receptionColis">
+            <div class="cercleNoteReceptionColis">
+            </div>
+            <div class="resume-text">
+              <h3>Réception Colis</h3>
+              <p>Le paquet est il correct</p><br>
+
+              <input type="button" class="show" value="Descriptif">
+              <input type="button" class="hide" value="Fermer">
+              <div class="data">
+
+                <p>Paquet de bonne qualiter avec la possibiliter de refermer le paquet. L'ouverture est simple.</p>
+
+
+                <div class="point">
+                  <div class="positif">
+                    <p class="point-positif">Point positif</p>
+                    <ul>
+                      <li><span class="plus">+</span>Packaging sympa</li>
+                      <li><span class="plus">+</span>Possibilter de refermer le colis</li>
+                    </ul>
+                  </div>
+                  <div class="negatif">
+                    <p class="point-negatif">Point negatif</p>
+                    <ul>
+                      <li><span class="moins">-</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="screenHome">
+                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
+                  </div>
+                </div>
+
+                <div class="screenHomeReduc">
+                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Souvant des réductions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page Unboxing -->
+
+          <div class="Unboxing">
+            <div class="cercleNoteUnboxing">
+            </div>
+            <div class="resume-text">
+              <h3>Unboxing</h3>
+              <p>Qualiter de l'embalage</p>
+
+              <input type="button" class="show" value="Descriptif">
+              <input type="button" class="hide" value="Fermer">
+              <div class="data">
+
+                <p>Bonne qualiter simple dans du plastique. On y retrouve tout les produits avec une fiche récapitulatif utilisable pour le revoi</p>
+
+
+                <div class="point">
+                  <div class="positif">
+                    <p class="point-positif">Point positif</p>
+                    <ul>
+                      <li><span class="plus">+</span>Embalage simple mais correct</li>
+                      <li><span class="plus">+</span>Fiche pour produit simple</li>
+                    </ul>
+                  </div>
+                  <div class="negatif">
+                    <p class="point-negatif">Point negatif</p>
+                    <ul>
+                      <li><span class="moins">-</span>Ca reste du plastique</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="screenHome">
+                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
+                  </div>
+                </div>
+
+                <div class="screenHomeReduc">
+                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Souvant des réductions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page Renvoi -->
+
+          <div class="renvoi">
+            <div class="cercleNoteRenvoi">
+            </div>
+            <div class="resume-text">
+              <h3>Renvoi</h3>
+              <p>Le renvoi est-il simple</p>
+
+              <input type="button" class="show" value="Descriptif">
+              <input type="button" class="hide" value="Fermer">
+              <div class="data">
+
+                <p>Dans l'embalage on retrouve une fiche, il sufi de le remplire et le mettre dans le paquet. L'embalage lui est refermable </p>
+
+
+                <div class="point">
+                  <div class="positif">
+                    <p class="point-positif">Point positif</p>
+                    <ul>
+                      <li><span class="plus">+</span>Fiche simple</li>
+                      <li><span class="plus">+</span>Embalage refaireman</li>
+                    </ul>
+                  </div>
+                  <div class="negatif">
+                    <p class="point-negatif">Point negatif</p>
+                    <ul>
+                      <li><span class="moins">-</span>Page un peu brouillon</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="screenHome">
+                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
+                  </div>
+                </div>
+
+                <div class="screenHomeReduc">
+                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
+                  <div class="screen_point">
+                    <p><span class="plus">+</span>Souvant des réductions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="flex-rw">
+
+            <ul class="footer-list-top">
+              <li>
+                <h4 class="footer-list-header">Réseaux sociaux</h4></li>
+              <li><a href='/shop/about-mission' class="generic-anchor footer-list-anchor" itemprop="significantLink">FACEBOOK</a></li>
+              <li><a href='/promos.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">TWITTER</a></li>
+              <li><a href='/retailers/new-retailers.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">INSTAGRAM</a></li>
+
+              <li><a href='/job-openings.html' itemprop="significantLink" class="generic-anchor footer-list-anchor">YOUTUBE</a></li>
+            </ul>
+
+            <ul class="footer-list-top">
+              <li>
+                <h4 class="footer-list-header">Fonctionalité</h4></li>
+              <li><a href='/Angels/cat/id/70' class="generic-anchor footer-list-anchor">NEWSLETTER</a></li>
+              <li><a href='/Home-Decor/cat/id/64' class="generic-anchor footer-list-anchor">BLOG</a></li>
+              <li><a href='/Mugs/cat/id/32' class="generic-anchor footer-list-anchor">TARIF</a></li>
+            </ul>
+            <ul class="footer-list-top">
+              <li id='help'>
+                <h4 class="footer-list-header">Aide</h4></li>
+              <li><a href='/shop/about-contact' class="generic-anchor footer-list-anchor" itemprop="significantLink">CONTACT</a></li>
+              <li><a href='/faq.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a></li>
+              <li id='find-a-store'><a href='/shop/store-locator' class="generic-anchor footer-list-anchor" itemprop="significantLink">GUIDE UTILISATION</a></li>
+            </ul>
+          </footer>
         </div>
+      </div>
+  </div>
+  <script type="text/javascript" src="showhide.js"></script>
 </body>
 
 </html>
