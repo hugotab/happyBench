@@ -304,3 +304,9 @@ jQuery(document).ready(function($){
 		return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
 	}
 });
+
+
+
+var score = $(".score").text();
+
+$(".fill").css("height",score);

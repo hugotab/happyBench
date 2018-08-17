@@ -8,942 +8,150 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>HappyBench</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container">
+    <div class="row ">
 
-    <section class="header">
-      <div class="row ">
-        <div class="menu col-3">
+      <div class="header col-12">
 
-          <div class="marque">
-            <h1>HappyBench</h1>
-          </div>
-
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Rapport</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Analyse</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Comparer</a>
-            </li>
-          </ul>
+        <div class="button_retour">
+          <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0OTIgNDkyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTIgNDkyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ2NC4zNDQsMjA3LjQxOGwwLjc2OCwwLjE2OEgxMzUuODg4bDEwMy40OTYtMTAzLjcyNGM1LjA2OC01LjA2NCw3Ljg0OC0xMS45MjQsNy44NDgtMTkuMTI0ICAgIGMwLTcuMi0yLjc4LTE0LjAxMi03Ljg0OC0xOS4wODhMMjIzLjI4LDQ5LjUzOGMtNS4wNjQtNS4wNjQtMTEuODEyLTcuODY0LTE5LjAwOC03Ljg2NGMtNy4yLDAtMTMuOTUyLDIuNzgtMTkuMDE2LDcuODQ0ICAgIEw3Ljg0NCwyMjYuOTE0QzIuNzYsMjMxLjk5OC0wLjAyLDIzOC43NywwLDI0NS45NzRjLTAuMDIsNy4yNDQsMi43NiwxNC4wMiw3Ljg0NCwxOS4wOTZsMTc3LjQxMiwxNzcuNDEyICAgIGM1LjA2NCw1LjA2LDExLjgxMiw3Ljg0NCwxOS4wMTYsNy44NDRjNy4xOTYsMCwxMy45NDQtMi43ODgsMTkuMDA4LTcuODQ0bDE2LjEwNC0xNi4xMTJjNS4wNjgtNS4wNTYsNy44NDgtMTEuODA4LDcuODQ4LTE5LjAwOCAgICBjMC03LjE5Ni0yLjc4LTEzLjU5Mi03Ljg0OC0xOC42NTJMMTM0LjcyLDI4NC40MDZoMzI5Ljk5MmMxNC44MjgsMCwyNy4yODgtMTIuNzgsMjcuMjg4LTI3LjZ2LTIyLjc4OCAgICBDNDkyLDIxOS4xOTgsNDc5LjE3MiwyMDcuNDE4LDQ2NC4zNDQsMjA3LjQxOHoiIGZpbGw9IiNiZmJmYmYiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+          <p>Accueil</p>
         </div>
 
-        <div class="text-header col-9">
-          <h1>Analyse du parcour client</h1>
-          <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                Telecharger le rapport
-            </button>
-
-          <section class="cd-horizontal-timeline">
-              <div class="cercle-timeline">
-                <p>A</p>
-              </div>
-            <div class="timeline">
-              <div class="events-wrapper">
-                <div class="events">
-                  <ol>
-                    <li><a href="#0" data-date="01/01/2018" class="selected">Etape 1</a></li>
-                    <li><a href="#0" data-date="03/01/2018">Etape 2</a></li>
-                    <li><a href="#0" data-date="05/01/2018">Etape 3</a></li>
-                    <li><a href="#0" data-date="07/01/2018">Etape 4</a></li>
-                    <li><a href="#0" data-date="09/01/2018">Etape 5</a></li>
-                    <li><a href="#0" data-date="11/01/2018">Etape 6</a></li>
-                    <li><a href="#0" data-date="13/01/2018">Etape 7</a></li>
-                    <li><a href="#0" data-date="15/01/2018">Etape 8</a></li>
-                    <li><a href="#0" data-date="17/01/2018">Etape 9</a></li>
-                    <li><a href="#0" data-date="19/01/2018">Etape 10</a></li>
-                    <li><a href="#0" data-date="21/01/2018">Etape 11</a></li>
-                    <li><a href="#0" data-date="23/01/2018">Etape 12</a></li>
-                    <li><a href="#0" data-date="25/01/2018">Etape 13</a></li>
-                    <li><a href="#0" data-date="27/01/2018">Etape 14</a></li>
-                    <li><a href="#0" data-date="29/01/2018">Etape 15</a></li>
-                  </ol>
-
-                  <span class="filling-line" aria-hidden="true"></span>
-                </div>
-              </div>
-
-              <ul class="cd-timeline-navigation">
-                <li><a href="#0" class="prev inactive">Prev</a></li>
-                <li><a href="#0" class="next">Next</a></li>
-              </ul>
-
-            </div>
-
-
-            <div class="events-content">
-              <ol>
-                <li class="selected" data-date="01/01/2018">
-                  <h2>Lien entre le site et les reseaux sociaux</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  </p>
-                </li>
-
-                <li data-date="03/01/2018">
-                  <h2>Home Page</h2>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  </p>
-                </li>
-
-                <li data-date="05/01/2018">
-                  <h2>Page Produit</h2>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  </p>
-                </li>
-
-                <li data-date="07/01/2018">
-                  <h2>Page Personnalisation</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  </p>
-                </li>
-
-                <li data-date="09/01/2018">
-                  <h2>Page Panier</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  </p>
-                </li>
-
-                <li data-date="11/01/2018">
-                  <h2>Page Connection</h2>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  </p>
-                </li>
-
-                <li data-date="13/01/2018">
-                  <h2>Page Livraison</h2>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  </p>
-                </li>
-
-                <li data-date="15/01/2018">
-                  <h2>Page Coordonnées</h2>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  </p>
-                </li>
-
-                <li data-date="17/01/2018">
-                  <h2>Page Paiment</h2>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  </p>
-                </li>
-
-                <li data-date="19/01/2018">
-                  <h2>Mail Validation</h2>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  </p>
-                </li>
-
-                <li data-date="21/01/2018">
-                  <h2>Mail Suivi</h2>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  </p>
-                </li>
-
-                <li data-date="23/01/2018">
-                  <h2>Mail Suivi</h2>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  </p>
-                </li>
-
-                <li data-date="25/01/2018">
-                  <h2>Réception Colis</h2>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  </p>
-                </li>
-
-                <li data-date="27/01/2018">
-                  <h2>Unboxing</h2>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  </p>
-                </li>
-
-                <li data-date="29/01/2018">
-                  <h2>Renvoi</h2>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                    reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  </p>
-                </li>
-              </ol>
-            </div>
-            <!-- .events-content -->
-          </section>
-
-          <div class="partage">
-            <button type="button" class="btn btn-seg" data-toggle="button" aria-pressed="false" autocomplete="off">
-              Partager votre rapport
-          </button>
-            <p>Envoyer votre rapport par mail à vos collaborateur</p>
-          </div>
-          <div class="categorie">
-            <h3>Etape de la commande:</h3>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Catégorie
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- etape lien -->
-
-          <div class="etapeLien">
-            <div class="cercleNoteLien">
-            </div>
-            <div class="resume-text">
-              <h3>Lien entre le site et les reseaux sociaux</h3>
-              <p>Est-il simple de trouver un produit sur le site à partir des réseaux sociaux</p>
-
-
-              <input type="button" class="show" value="Descriptif">
-              <input type="button" class="hide" value="Fermer">
-              <div class="data">
-
-                <p>Le lien entre le site et les reseaux sont bien. On retrouve les produit sur les reseaux</p>
-
-                <div class="point">
-                  <div class="positif">
-                    <p class="point-positif">Point positif</p>
-                    <ul>
-                      <li><span class="plus">+</span>Page simple d'accée</li>
-                      <li><span class="plus">+</span>Categorie clair et simple</li>
-                      <li><span class="plus">+</span>Possibiliter de filtrer les produit</li>
-                    </ul>
-                  </div>
-                  <div class="negatif">
-                    <p class="point-negatif">Point negatif</p>
-                    <ul>
-                      <li><span class="moins">-</span>On ne vois pas les prix directementsur instagram</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="screenInsta">
-                  <img src="img\Screenshot_ASOS.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Possibilter de voir la référence directement sur instagram</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Page Home -->
-
-          <div class="etapeHome">
-            <div class="cercleNoteHome">
-            </div>
-            <div class="resume-text">
-              <h3>HomePage</h3>
-              <p>La home page est elle clair est intuitive</p>
-
-              <input type="button" class="show" value="Descriptif">
-              <input type="button" class="hide" value="Fermer">
-              <div class="data">
-
-                <p>Le choix des produits sur le site Asos est rapide. En haut sur la page d'accueil on retrouve un accé au "catégorie" Ce qui amené directement sur une page avec l'ensemble des catégorie disponible sur le site. Lors d'un clic sur une catégorie
-                  on y retrouve l'ensemble des "sous catégorie" (ex: Categorie vetement -> emsemble des categories de vetement). Après avoir choisi le type de vetement, on trouve l'ensemble des produit.
-                </p>
-
-
-                <div class="point">
-                  <div class="positif">
-                    <p class="point-positif">Point positif</p>
-                    <ul>
-                      <li><span class="plus">+</span>Page simple d'accée</li>
-                      <li><span class="plus">+</span>Categorie clair et simple</li>
-                      <li><span class="plus">+</span>Possibiliter de filtrer les produit</li>
-                    </ul>
-                  </div>
-                  <div class="negatif">
-                    <p class="point-negatif">Point negatif</p>
-                    <ul>
-                      <li><span class="moins">-</span>Page un peu brouillon</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="screenHome">
-                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
-                  </div>
-                </div>
-
-                <div class="screenHomeReduc">
-                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Souvant des réductions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Page Produit -->
-
-          <div class="pageProduit">
-            <div class="cercleNotePageProduit">
-            </div>
-            <div class="resume-text">
-              <h3>Page Produit</h3>
-              <p>La page produit est elle complète avec tout les informations utiles</p>
-
-              <input type="button" class="show" value="Descriptif">
-              <input type="button" class="hide" value="Fermer">
-              <div class="data">
-
-                <p>Une page complète avec beaucoup de produit. De nombreu filtre qui facilite les recherches</p>
-
-
-                <div class="point">
-                  <div class="positif">
-                    <p class="point-positif">Point positif</p>
-                    <ul>
-                      <li><span class="plus">+</span>Page simple</li>
-                      <li><span class="plus">+</span>Filtre Complet</li>
-                    </ul>
-                  </div>
-                  <div class="negatif">
-                    <p class="point-negatif">Point negatif</p>
-                    <ul>
-                      <li><span class="moins">-</span></li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="screenHome">
-                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
-                  </div>
-                </div>
-
-                <div class="screenHomeReduc">
-                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Souvant des réductions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Page Personnalisation -->
-
-          <div class="pagePersonnalisation">
-            <div class="cercleNotePersonnalisation">
-            </div>
-            <div class="resume-text">
-              <h3>Page Personnalisation</h3>
-              <p>Retrouve t'on l'ensemeble des informations utiles comment les tailles, un descriptif du produit.</p>
-              <input type="button" class="show" value="Descriptif">
-              <input type="button" class="hide" value="Fermer">
-              <div class="data">
-
-                <p>On peux retrouver un guide des tailles complète. Un desciptif du produit. Les photos sont clair et il y a aussi une vidéo qui montre le produit. Il y a aussi des propositions de produit pertinant.</p>
-
-
-                <div class="point">
-                  <div class="positif">
-                    <p class="point-positif">Point positif</p>
-                    <ul>
-                      <li><span class="plus">+</span>Guide des tailles complète</li>
-                      <li><span class="plus">+</span>Descriptif complète</li>
-                      <li><span class="plus">+</span>Une video pour montrer le produit</li>
-                    </ul>
-                  </div>
-                  <div class="negatif">
-                    <p class="point-negatif">Point negatif</p>
-                    <ul>
-                      <li><span class="moins">-</span></li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="screenHome">
-                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
-                  </div>
-                </div>
-
-                <div class="screenHomeReduc">
-                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Souvant des réductions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Page Panier -->
-
-          <div class="pagePanier">
-            <div class="cercleNotePanier">
-            </div>
-            <div class="resume-text">
-              <h3>Page Panier</h3>
-              <p>Le panier est-il complet retrouve t'on tout les produit</p>
-
-              <input type="button" class="show" value="Descriptif">
-              <input type="button" class="hide" value="Fermer">
-              <div class="data">
-
-                <p>On retrouve l'ensemble des produit mis dans le panier. Voir le total du prix des produits. Possibiliter de suprimer un produit ou de le mettre de coté. On peut aussi modifier la taille et la quantitier depuis le panier.</p>
-
-
-                <div class="point">
-                  <div class="positif">
-                    <p class="point-positif">Point positif</p>
-                    <ul>
-                      <li><span class="plus">+</span>Modifier la taille</li>
-                      <li><span class="plus">+</span>Modifier la quantitier</li>
-                      <li><span class="plus">+</span>Voir le pric total </li>
-                    </ul>
-                  </div>
-                  <div class="negatif">
-                    <p class="point-negatif">Point negatif</p>
-                    <ul>
-                      <li><span class="moins">-</span></li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="screenHome">
-                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
-                  </div>
-                </div>
-
-                <div class="screenHomeReduc">
-                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Souvant des réductions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Page Connection -->
-
-          <div class="pageConnection">
-            <div class="cercleNoteConnection">
-            </div>
-            <div class="resume-text">
-              <h3>Page Connection</h3>
-              <p>La connection et l'inscription est elle simple</p>
-
-              <input type="button" class="show" value="Descriptif">
-              <input type="button" class="hide" value="Fermer">
-              <div class="data">
-
-                <p>Pour se créer un compte il y a la possibilter d'utilisé les réseaux comme Facebook ou Twitter. On puet directement se connecter avec un compte google. Il y a aussi un forum classique pour créer son compte. </p>
-
-
-                <div class="point">
-                  <div class="positif">
-                    <p class="point-positif">Point positif</p>
-                    <ul>
-                      <li><span class="plus">+</span>Inscription avec les reseaux sociaux</li>
-                      <li><span class="plus">+</span>Simple et rapide</li>
-                    </ul>
-                  </div>
-                  <div class="negatif">
-                    <p class="point-negatif">Point negatif</p>
-                    <ul>
-                      <li><span class="moins">-</span></li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="screenHome">
-                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
-                  </div>
-                </div>
-
-                <div class="screenHomeReduc">
-                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Souvant des réductions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Page Livraison -->
-
-          <div class="pageLivraison">
-            <div class="cercleNoteLivraion">
-            </div>
-            <div class="resume-text">
-              <h3>Page Livraison</h3>
-              <p>Il y a plusieur possibilter de livraison ?</p>
-
-              <input type="button" class="show" value="Descriptif">
-              <input type="button" class="hide" value="Fermer">
-              <div class="data">
-
-                <p>Pour la livraison il y a plusieur possibilter avec un prix different par rapport à leur vitesse arriver.</p>
-
-                <div class="point">
-                  <div class="positif">
-                    <p class="point-positif">Point positif</p>
-                    <ul>
-                      <li><span class="plus">+</span>Plusieur choix possible</li>
-                    </ul>
-                  </div>
-                  <div class="negatif">
-                    <p class="point-negatif">Point negatif</p>
-                    <ul>
-                      <li><span class="moins">-</span></li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="screenHome">
-                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
-                  </div>
-                </div>
-
-                <div class="screenHomeReduc">
-                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Souvant des réductions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Page Coordonnées -->
-
-          <div class="pageCoordonnées">
-            <div class="cercleNoteCoordonnés">
-            </div>
-            <div class="resume-text">
-              <h3>Page Coordonnées</h3>
-              <p>Ajout de coordonnés est-il simple. Est-il possible de réutiliser les coordonnés.</p>
-
-              <input type="button" class="show" value="Descriptif">
-              <input type="button" class="hide" value="Fermer">
-              <div class="data">
-
-                <p>Posssible de mettre des coordonnés et les enregistrer pour les utiliser plusieur fois</p>
-
-
-                <div class="point">
-                  <div class="positif">
-                    <p class="point-positif">Point positif</p>
-                    <ul>
-                      <li><span class="plus">+</span>Sélection simple d'une address déjà utilisé</li>
-                      <li><span class="plus">+</span>Ajout simple et rapide</li>
-                    </ul>
-                  </div>
-                  <div class="negatif">
-                    <p class="point-negatif">Point negatif</p>
-                    <ul>
-                      <li><span class="moins">-</span></li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="screenHome">
-                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
-                  </div>
-                </div>
-
-                <div class="screenHomeReduc">
-                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Souvant des réductions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Page Paiment -->
-
-          <div class="pagePaiment">
-            <div class="cercleNotePaiment">
-            </div>
-            <div class="resume-text">
-              <h3>Page Paiment</h3>
-              <p>Plusieur moyen de paiment disponible et réutilisation possible.</p>
-
-              <input type="button" class="show" value="Descriptif">
-              <input type="button" class="hide" value="Fermer">
-              <div class="data">
-
-                <p>On retrouve plusieur moyen de paiment et on peut enregistrer plusieur moyen de paiment.</p>
-
-                <div class="point">
-                  <div class="positif">
-                    <p class="point-positif">Point positif</p>
-                    <ul>
-                      <li><span class="plus">+</span>Plusieur moyen de paiment</li>
-                      <li><span class="plus">+</span>Enregistrer plusieur moyen de paiment</li>
-                    </ul>
-                  </div>
-                  <div class="negatif">
-                    <p class="point-negatif">Point negatif</p>
-                    <ul>
-                      <li><span class="moins">-</span>Page un peu brouillon</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="screenHome">
-                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
-                  </div>
-                </div>
-
-                <div class="screenHomeReduc">
-                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Souvant des réductions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Page mailValidation -->
-
-          <div class="mailValidation">
-            <div class="cercleNoteMailValidation">
-            </div>
-            <div class="resume-text">
-              <h3>Mail Validation</h3>
-              <p>Recoi t'on un mail après une commande</p>
-
-              <input type="button" class="show" value="Descriptif">
-              <input type="button" class="hide" value="Fermer">
-              <div class="data">
-
-                <p>Mail complet avec les informations sur la commande. On peut retrouver nos information tel que l'adress d'envoi. Et aussi l'ensemble du panier</p>
-
-
-                <div class="point">
-                  <div class="positif">
-                    <p class="point-positif">Point positif</p>
-                    <ul>
-                      <li><span class="plus">+</span>Mail complet</li>
-                    </ul>
-                  </div>
-                  <div class="negatif">
-                    <p class="point-negatif">Point negatif</p>
-                    <ul>
-                      <li><span class="moins">-</span>Page un peu brouillon</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="screenHome">
-                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
-                  </div>
-                </div>
-
-                <div class="screenHomeReduc">
-                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Souvant des réductions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Page mailSuivi -->
-
-          <div class="mailSuivi">
-            <div class="cercleNoteMailSuivi">
-            </div>
-            <div class="resume-text">
-              <h3>Mail Suivi</h3>
-              <p>Il y a la possibilter de suivre l'avancer du colis ?</p>
-
-              <input type="button" class="show" value="Descriptif">
-              <input type="button" class="hide" value="Fermer">
-              <div class="data">
-
-                <p>Mail qui donne les coordonnés du colis avec la possibilter de suivre l'avancer du colis.</p>
-
-                <div class="point">
-                  <div class="positif">
-                    <p class="point-positif">Point positif</p>
-                    <ul>
-                      <li><span class="plus">+</span>Voir l'avancer du colis</li>
-                    </ul>
-                  </div>
-                  <div class="negatif">
-                    <p class="point-negatif">Point negatif</p>
-                    <ul>
-                      <li><span class="moins">-</span></li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="screenHome">
-                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
-                  </div>
-                </div>
-
-                <div class="screenHomeReduc">
-                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Souvant des réductions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Page RéceptionColis -->
-
-          <div class="receptionColis">
-            <div class="cercleNoteReceptionColis">
-            </div>
-            <div class="resume-text">
-              <h3>Réception Colis</h3>
-              <p>Le paquet est il correct</p><br>
-
-              <input type="button" class="show" value="Descriptif">
-              <input type="button" class="hide" value="Fermer">
-              <div class="data">
-
-                <p>Paquet de bonne qualiter avec la possibiliter de refermer le paquet. L'ouverture est simple.</p>
-
-
-                <div class="point">
-                  <div class="positif">
-                    <p class="point-positif">Point positif</p>
-                    <ul>
-                      <li><span class="plus">+</span>Packaging sympa</li>
-                      <li><span class="plus">+</span>Possibilter de refermer le colis</li>
-                    </ul>
-                  </div>
-                  <div class="negatif">
-                    <p class="point-negatif">Point negatif</p>
-                    <ul>
-                      <li><span class="moins">-</span></li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="screenHome">
-                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
-                  </div>
-                </div>
-
-                <div class="screenHomeReduc">
-                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Souvant des réductions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Page Unboxing -->
-
-          <div class="Unboxing">
-            <div class="cercleNoteUnboxing">
-            </div>
-            <div class="resume-text">
-              <h3>Unboxing</h3>
-              <p>Qualiter de l'embalage</p>
-
-              <input type="button" class="show" value="Descriptif">
-              <input type="button" class="hide" value="Fermer">
-              <div class="data">
-
-                <p>Bonne qualiter simple dans du plastique. On y retrouve tout les produits avec une fiche récapitulatif utilisable pour le revoi</p>
-
-
-                <div class="point">
-                  <div class="positif">
-                    <p class="point-positif">Point positif</p>
-                    <ul>
-                      <li><span class="plus">+</span>Embalage simple mais correct</li>
-                      <li><span class="plus">+</span>Fiche pour produit simple</li>
-                    </ul>
-                  </div>
-                  <div class="negatif">
-                    <p class="point-negatif">Point negatif</p>
-                    <ul>
-                      <li><span class="moins">-</span>Ca reste du plastique</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="screenHome">
-                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
-                  </div>
-                </div>
-
-                <div class="screenHomeReduc">
-                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Souvant des réductions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Page Renvoi -->
-
-          <div class="renvoi">
-            <div class="cercleNoteRenvoi">
-            </div>
-            <div class="resume-text">
-              <h3>Renvoi</h3>
-              <p>Le renvoi est-il simple</p>
-
-              <input type="button" class="show" value="Descriptif">
-              <input type="button" class="hide" value="Fermer">
-              <div class="data">
-
-                <p>Dans l'embalage on retrouve une fiche, il sufi de le remplire et le mettre dans le paquet. L'embalage lui est refermable </p>
-
-
-                <div class="point">
-                  <div class="positif">
-                    <p class="point-positif">Point positif</p>
-                    <ul>
-                      <li><span class="plus">+</span>Fiche simple</li>
-                      <li><span class="plus">+</span>Embalage refaireman</li>
-                    </ul>
-                  </div>
-                  <div class="negatif">
-                    <p class="point-negatif">Point negatif</p>
-                    <ul>
-                      <li><span class="moins">-</span>Page un peu brouillon</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="screenHome">
-                  <img src="img\Screenshot_Home.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Catégorie simple d'accée</p>
-                  </div>
-                </div>
-
-                <div class="screenHomeReduc">
-                  <img src="img\Screenshot_HomeReduc.jpg" alt="screenAsos">
-                  <div class="screen_point">
-                    <p><span class="plus">+</span>Souvant des réductions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <footer class="flex-rw">
-
-            <ul class="footer-list-top">
-              <li>
-                <h4 class="footer-list-header">Réseaux sociaux</h4></li>
-              <li><a href='/shop/about-mission' class="generic-anchor footer-list-anchor" itemprop="significantLink">FACEBOOK</a></li>
-              <li><a href='/promos.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">TWITTER</a></li>
-              <li><a href='/retailers/new-retailers.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">INSTAGRAM</a></li>
-
-              <li><a href='/job-openings.html' itemprop="significantLink" class="generic-anchor footer-list-anchor">YOUTUBE</a></li>
-            </ul>
-
-            <ul class="footer-list-top">
-              <li>
-                <h4 class="footer-list-header">Fonctionalité</h4></li>
-              <li><a href='/Angels/cat/id/70' class="generic-anchor footer-list-anchor">NEWSLETTER</a></li>
-              <li><a href='/Home-Decor/cat/id/64' class="generic-anchor footer-list-anchor">BLOG</a></li>
-              <li><a href='/Mugs/cat/id/32' class="generic-anchor footer-list-anchor">TARIF</a></li>
-            </ul>
-            <ul class="footer-list-top">
-              <li id='help'>
-                <h4 class="footer-list-header">Aide</h4></li>
-              <li><a href='/shop/about-contact' class="generic-anchor footer-list-anchor" itemprop="significantLink">CONTACT</a></li>
-              <li><a href='/faq.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a></li>
-              <li id='find-a-store'><a href='/shop/store-locator' class="generic-anchor footer-list-anchor" itemprop="significantLink">GUIDE UTILISATION</a></li>
-            </ul>
-          </footer>
+        <div class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Logo-Le-Slip-Francais.png" alt="">
         </div>
+
+        <div class="titre_marque">
+          <h2>Le slip français</h2>
+        </div>
+
       </div>
+
+      <div class="chapitre col-12">
+        <div class="nom_chapitre">
+          <div class="cercle_note_lien">
+            <p>A</p>
+          </div>
+          <h3>Livraison</h3>
+          <div class="ligne">
+          </div>
+        </div>
+
+        <div class="header_chapitre">
+          <div class="row">
+
+
+          <div class="tap col-3">
+            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDE2LDE0OS4zMzNjLTguNzY4LDAtMTYuOTM5LDIuNjY3LTIzLjcyMyw3LjIxMUMzODYuNDMyLDEzOS45NDcsMzcwLjU4MSwxMjgsMzUyLDEyOCAgICBjLTguNzY4LDAtMTYuOTM5LDIuNjY3LTIzLjcyMyw3LjIxMWMtNS44NDUtMTYuNTk3LTIxLjY5Ni0yOC41NDQtNDAuMjc3LTI4LjU0NGMtNy43NjUsMC0xNS4wNjEsMi4wOTEtMjEuMzMzLDUuNzM5VjQyLjY2NyAgICBDMjY2LjY2NywxOS4xMzYsMjQ3LjUzMSwwLDIyNCwwcy00Mi42NjcsMTkuMTM2LTQyLjY2Nyw0Mi42Njd2MjQ5LjQwOGwtNTguNjQ1LTI5LjMzM0MxMTMuODU2LDI1OC4zMjUsMTAzLjk1NywyNTYsOTQuMDgsMjU2ICAgIGMtMjIuNDg1LDAtNDAuNzQ3LDE4LjI4My00MC43NDcsNDAuODc1YzAsMTAuOTAxLDQuMjQ1LDIxLjEyLDExLjk0NywyOC44MjFsMTM3Ljk0MSwxMzcuOTQxQzIzNC4zODksNDk0LjgyNywyNzUuODgzLDUxMiwzMjAsNTEyICAgIGM3Ni40NTksMCwxMzguNjY3LTYyLjIwOCwxMzguNjY3LTEzOC42NjdWMTkyQzQ1OC42NjcsMTY4LjQ2OSw0MzkuNTMxLDE0OS4zMzMsNDE2LDE0OS4zMzN6IE00MzcuMzMzLDM3My4zMzMgICAgYzAsNjQuNzA0LTUyLjY1MSwxMTcuMzMzLTExNy4zNTUsMTE3LjMzM2MtMzguNDIxLDAtNzQuNTE3LTE0Ljk1NS0xMDEuNjUzLTQyLjEzM0w4MC4zNjMsMzEwLjU5MiAgICBjLTMuNjY5LTMuNjQ4LTUuNjk2LTguNTMzLTUuNjk2LTEzLjg0NWMwLTEwLjcwOSw4LjcwNC0xOS40MTMsMTkuNDEzLTE5LjQxM2M2LjU5MiwwLDEzLjE2MywxLjU1NywxOS4wNzIsNC41MDFsNzQuMDkxLDM3LjAzNSAgICBjMy4zMDcsMS42NDMsNy4yNTMsMS40NzIsMTAuMzY4LTAuNDY5YzMuMTM2LTEuOTQxLDUuMDU2LTUuMzc2LDUuMDU2LTkuMDY3VjQyLjY2N2MwLTExLjc1NSw5LjU1Ny0yMS4zMzMsMjEuMzMzLTIxLjMzMyAgICBzMjEuMzMzLDkuNTc5LDIxLjMzMywyMS4zMzN2MjAyLjY2N2MwLDUuODg4LDQuNzc5LDEwLjY2NywxMC42NjcsMTAuNjY3YzUuODg4LDAsMTAuNjY3LTQuNzc5LDEwLjY2Ny0xMC42Njd2LTk2ICAgIGMwLTExLjc1NSw5LjU1Ny0yMS4zMzMsMjEuMzMzLTIxLjMzM3MyMS4zMzMsOS41NzksMjEuMzMzLDIxLjMzM3Y5NmMwLDUuODg4LDQuNzc5LDEwLjY2NywxMC42NjcsMTAuNjY3ICAgIHMxMC42NjctNC43NzksMTAuNjY3LTEwLjY2N3YtNzQuNjY3YzAtMTEuNzU1LDkuNTU3LTIxLjMzMywyMS4zMzMtMjEuMzMzczIxLjMzMyw5LjU3OSwyMS4zMzMsMjEuMzMzdjc0LjY2NyAgICBjMCw1Ljg4OCw0Ljc3OSwxMC42NjcsMTAuNjY3LDEwLjY2N2M1Ljg4OCwwLDEwLjY2Ny00Ljc3OSwxMC42NjctMTAuNjY3VjE5MmMwLTExLjc1NSw5LjU1Ny0yMS4zMzMsMjEuMzMzLTIxLjMzMyAgICBzMjEuMzMzLDkuNTc5LDIxLjMzMywyMS4zMzNWMzczLjMzM3oiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+            />
+            <p>2 tap</p>
+          </div>
+
+          <div class="slider  col-3">
+            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDE2LDE0OS4zMzNjLTguNzY4LDAtMTYuOTM5LDIuNjY3LTIzLjcyMyw3LjIxMUMzODYuNDMyLDEzOS45NDcsMzcwLjU4MSwxMjgsMzUyLDEyOCAgICBjLTguNzY4LDAtMTYuOTM5LDIuNjY3LTIzLjcyMyw3LjIxMWMtNS44NDUtMTYuNTk3LTIxLjY5Ni0yOC41NDQtNDAuMjc3LTI4LjU0NGMtNy43NjUsMC0xNS4wNjEsMi4wOTEtMjEuMzMzLDUuNzM5VjQyLjY2NyAgICBDMjY2LjY2NywxOS4xMzYsMjQ3LjUzMSwwLDIyNCwwcy00Mi42NjcsMTkuMTM2LTQyLjY2Nyw0Mi42Njd2MjQ5LjQwOGwtNTguNjQ1LTI5LjMzM0MxMTMuODU2LDI1OC4zMjUsMTAzLjk1NywyNTYsOTQuMDgsMjU2ICAgIGMtMjIuNDg1LDAtNDAuNzQ3LDE4LjI4My00MC43NDcsNDAuODc1YzAsMTAuOTAxLDQuMjQ1LDIxLjEyLDExLjk0NywyOC44MjFsMTM3Ljk0MSwxMzcuOTQxQzIzNC4zODksNDk0LjgyNywyNzUuODgzLDUxMiwzMjAsNTEyICAgIGM3Ni40NTksMCwxMzguNjY3LTYyLjIwOCwxMzguNjY3LTEzOC42NjdWMTkyQzQ1OC42NjcsMTY4LjQ2OSw0MzkuNTMxLDE0OS4zMzMsNDE2LDE0OS4zMzN6IE00MzcuMzMzLDM3My4zMzMgICAgYzAsNjQuNzA0LTUyLjY1MSwxMTcuMzMzLTExNy4zNTUsMTE3LjMzM2MtMzguNDIxLDAtNzQuNTE3LTE0Ljk1NS0xMDEuNjUzLTQyLjEzM0w4MC4zNjMsMzEwLjU5MiAgICBjLTMuNjY5LTMuNjQ4LTUuNjk2LTguNTMzLTUuNjk2LTEzLjg0NWMwLTEwLjcwOSw4LjcwNC0xOS40MTMsMTkuNDEzLTE5LjQxM2M2LjU5MiwwLDEzLjE2MywxLjU1NywxOS4wNzIsNC41MDFsNzQuMDkxLDM3LjAzNSAgICBjMy4zMDcsMS42NDMsNy4yNTMsMS40NzIsMTAuMzY4LTAuNDY5YzMuMTM2LTEuOTQxLDUuMDU2LTUuMzc2LDUuMDU2LTkuMDY3VjQyLjY2N2MwLTExLjc1NSw5LjU1Ny0yMS4zMzMsMjEuMzMzLTIxLjMzMyAgICBzMjEuMzMzLDkuNTc5LDIxLjMzMywyMS4zMzN2MjAyLjY2N2MwLDUuODg4LDQuNzc5LDEwLjY2NywxMC42NjcsMTAuNjY3YzUuODg4LDAsMTAuNjY3LTQuNzc5LDEwLjY2Ny0xMC42Njd2LTk2ICAgIGMwLTExLjc1NSw5LjU1Ny0yMS4zMzMsMjEuMzMzLTIxLjMzM3MyMS4zMzMsOS41NzksMjEuMzMzLDIxLjMzM3Y5NmMwLDUuODg4LDQuNzc5LDEwLjY2NywxMC42NjcsMTAuNjY3ICAgIHMxMC42NjctNC43NzksMTAuNjY3LTEwLjY2N3YtNzQuNjY3YzAtMTEuNzU1LDkuNTU3LTIxLjMzMywyMS4zMzMtMjEuMzMzczIxLjMzMyw5LjU3OSwyMS4zMzMsMjEuMzMzdjc0LjY2NyAgICBjMCw1Ljg4OCw0Ljc3OSwxMC42NjcsMTAuNjY3LDEwLjY2N2M1Ljg4OCwwLDEwLjY2Ny00Ljc3OSwxMC42NjctMTAuNjY3VjE5MmMwLTExLjc1NSw5LjU1Ny0yMS4zMzMsMjEuMzMzLTIxLjMzMyAgICBzMjEuMzMzLDkuNTc5LDIxLjMzMywyMS4zMzNWMzczLjMzM3oiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+            />
+            <p>1 slider</p>
+          </div>
+
+          <div class="time  col-3">
+            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDE2LDE0OS4zMzNjLTguNzY4LDAtMTYuOTM5LDIuNjY3LTIzLjcyMyw3LjIxMUMzODYuNDMyLDEzOS45NDcsMzcwLjU4MSwxMjgsMzUyLDEyOCAgICBjLTguNzY4LDAtMTYuOTM5LDIuNjY3LTIzLjcyMyw3LjIxMWMtNS44NDUtMTYuNTk3LTIxLjY5Ni0yOC41NDQtNDAuMjc3LTI4LjU0NGMtNy43NjUsMC0xNS4wNjEsMi4wOTEtMjEuMzMzLDUuNzM5VjQyLjY2NyAgICBDMjY2LjY2NywxOS4xMzYsMjQ3LjUzMSwwLDIyNCwwcy00Mi42NjcsMTkuMTM2LTQyLjY2Nyw0Mi42Njd2MjQ5LjQwOGwtNTguNjQ1LTI5LjMzM0MxMTMuODU2LDI1OC4zMjUsMTAzLjk1NywyNTYsOTQuMDgsMjU2ICAgIGMtMjIuNDg1LDAtNDAuNzQ3LDE4LjI4My00MC43NDcsNDAuODc1YzAsMTAuOTAxLDQuMjQ1LDIxLjEyLDExLjk0NywyOC44MjFsMTM3Ljk0MSwxMzcuOTQxQzIzNC4zODksNDk0LjgyNywyNzUuODgzLDUxMiwzMjAsNTEyICAgIGM3Ni40NTksMCwxMzguNjY3LTYyLjIwOCwxMzguNjY3LTEzOC42NjdWMTkyQzQ1OC42NjcsMTY4LjQ2OSw0MzkuNTMxLDE0OS4zMzMsNDE2LDE0OS4zMzN6IE00MzcuMzMzLDM3My4zMzMgICAgYzAsNjQuNzA0LTUyLjY1MSwxMTcuMzMzLTExNy4zNTUsMTE3LjMzM2MtMzguNDIxLDAtNzQuNTE3LTE0Ljk1NS0xMDEuNjUzLTQyLjEzM0w4MC4zNjMsMzEwLjU5MiAgICBjLTMuNjY5LTMuNjQ4LTUuNjk2LTguNTMzLTUuNjk2LTEzLjg0NWMwLTEwLjcwOSw4LjcwNC0xOS40MTMsMTkuNDEzLTE5LjQxM2M2LjU5MiwwLDEzLjE2MywxLjU1NywxOS4wNzIsNC41MDFsNzQuMDkxLDM3LjAzNSAgICBjMy4zMDcsMS42NDMsNy4yNTMsMS40NzIsMTAuMzY4LTAuNDY5YzMuMTM2LTEuOTQxLDUuMDU2LTUuMzc2LDUuMDU2LTkuMDY3VjQyLjY2N2MwLTExLjc1NSw5LjU1Ny0yMS4zMzMsMjEuMzMzLTIxLjMzMyAgICBzMjEuMzMzLDkuNTc5LDIxLjMzMywyMS4zMzN2MjAyLjY2N2MwLDUuODg4LDQuNzc5LDEwLjY2NywxMC42NjcsMTAuNjY3YzUuODg4LDAsMTAuNjY3LTQuNzc5LDEwLjY2Ny0xMC42Njd2LTk2ICAgIGMwLTExLjc1NSw5LjU1Ny0yMS4zMzMsMjEuMzMzLTIxLjMzM3MyMS4zMzMsOS41NzksMjEuMzMzLDIxLjMzM3Y5NmMwLDUuODg4LDQuNzc5LDEwLjY2NywxMC42NjcsMTAuNjY3ICAgIHMxMC42NjctNC43NzksMTAuNjY3LTEwLjY2N3YtNzQuNjY3YzAtMTEuNzU1LDkuNTU3LTIxLjMzMywyMS4zMzMtMjEuMzMzczIxLjMzMyw5LjU3OSwyMS4zMzMsMjEuMzMzdjc0LjY2NyAgICBjMCw1Ljg4OCw0Ljc3OSwxMC42NjcsMTAuNjY3LDEwLjY2N2M1Ljg4OCwwLDEwLjY2Ny00Ljc3OSwxMC42NjctMTAuNjY3VjE5MmMwLTExLjc1NSw5LjU1Ny0yMS4zMzMsMjEuMzMzLTIxLjMzMyAgICBzMjEuMzMzLDkuNTc5LDIxLjMzMywyMS4zMzNWMzczLjMzM3oiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+            />
+            <p>45 sec</p>
+          </div>
+
+          <div class="popup col-3>">
+            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDE2LDE0OS4zMzNjLTguNzY4LDAtMTYuOTM5LDIuNjY3LTIzLjcyMyw3LjIxMUMzODYuNDMyLDEzOS45NDcsMzcwLjU4MSwxMjgsMzUyLDEyOCAgICBjLTguNzY4LDAtMTYuOTM5LDIuNjY3LTIzLjcyMyw3LjIxMWMtNS44NDUtMTYuNTk3LTIxLjY5Ni0yOC41NDQtNDAuMjc3LTI4LjU0NGMtNy43NjUsMC0xNS4wNjEsMi4wOTEtMjEuMzMzLDUuNzM5VjQyLjY2NyAgICBDMjY2LjY2NywxOS4xMzYsMjQ3LjUzMSwwLDIyNCwwcy00Mi42NjcsMTkuMTM2LTQyLjY2Nyw0Mi42Njd2MjQ5LjQwOGwtNTguNjQ1LTI5LjMzM0MxMTMuODU2LDI1OC4zMjUsMTAzLjk1NywyNTYsOTQuMDgsMjU2ICAgIGMtMjIuNDg1LDAtNDAuNzQ3LDE4LjI4My00MC43NDcsNDAuODc1YzAsMTAuOTAxLDQuMjQ1LDIxLjEyLDExLjk0NywyOC44MjFsMTM3Ljk0MSwxMzcuOTQxQzIzNC4zODksNDk0LjgyNywyNzUuODgzLDUxMiwzMjAsNTEyICAgIGM3Ni40NTksMCwxMzguNjY3LTYyLjIwOCwxMzguNjY3LTEzOC42NjdWMTkyQzQ1OC42NjcsMTY4LjQ2OSw0MzkuNTMxLDE0OS4zMzMsNDE2LDE0OS4zMzN6IE00MzcuMzMzLDM3My4zMzMgICAgYzAsNjQuNzA0LTUyLjY1MSwxMTcuMzMzLTExNy4zNTUsMTE3LjMzM2MtMzguNDIxLDAtNzQuNTE3LTE0Ljk1NS0xMDEuNjUzLTQyLjEzM0w4MC4zNjMsMzEwLjU5MiAgICBjLTMuNjY5LTMuNjQ4LTUuNjk2LTguNTMzLTUuNjk2LTEzLjg0NWMwLTEwLjcwOSw4LjcwNC0xOS40MTMsMTkuNDEzLTE5LjQxM2M2LjU5MiwwLDEzLjE2MywxLjU1NywxOS4wNzIsNC41MDFsNzQuMDkxLDM3LjAzNSAgICBjMy4zMDcsMS42NDMsNy4yNTMsMS40NzIsMTAuMzY4LTAuNDY5YzMuMTM2LTEuOTQxLDUuMDU2LTUuMzc2LDUuMDU2LTkuMDY3VjQyLjY2N2MwLTExLjc1NSw5LjU1Ny0yMS4zMzMsMjEuMzMzLTIxLjMzMyAgICBzMjEuMzMzLDkuNTc5LDIxLjMzMywyMS4zMzN2MjAyLjY2N2MwLDUuODg4LDQuNzc5LDEwLjY2NywxMC42NjcsMTAuNjY3YzUuODg4LDAsMTAuNjY3LTQuNzc5LDEwLjY2Ny0xMC42Njd2LTk2ICAgIGMwLTExLjc1NSw5LjU1Ny0yMS4zMzMsMjEuMzMzLTIxLjMzM3MyMS4zMzMsOS41NzksMjEuMzMzLDIxLjMzM3Y5NmMwLDUuODg4LDQuNzc5LDEwLjY2NywxMC42NjcsMTAuNjY3ICAgIHMxMC42NjctNC43NzksMTAuNjY3LTEwLjY2N3YtNzQuNjY3YzAtMTEuNzU1LDkuNTU3LTIxLjMzMywyMS4zMzMtMjEuMzMzczIxLjMzMyw5LjU3OSwyMS4zMzMsMjEuMzMzdjc0LjY2NyAgICBjMCw1Ljg4OCw0Ljc3OSwxMC42NjcsMTAuNjY3LDEwLjY2N2M1Ljg4OCwwLDEwLjY2Ny00Ljc3OSwxMC42NjctMTAuNjY3VjE5MmMwLTExLjc1NSw5LjU1Ny0yMS4zMzMsMjEuMzMzLTIxLjMzMyAgICBzMjEuMzMzLDkuNTc5LDIxLjMzMywyMS4zMzNWMzczLjMzM3oiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+            />
+            <p>1 popup</p>
+          </div>
+        </div>
+          </div>
+
+        <div class="tops">
+          <img class="courbe_tops" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI5NyAyOTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI5NyAyOTc7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KPGc+Cgk8cGF0aCBkPSJNODAuNTA1LDE0MC40MDVIMTIuNTFjLTUuNjg5LDAtMTAuMzAyLDQuNjEzLTEwLjMwMiwxMC4zMDJ2MTM1Ljk5QzIuMjA3LDI5Mi4zODcsNi44MiwyOTcsMTIuNTEsMjk3aDY3Ljk5NSAgIGM1LjY4OSwwLDEwLjMwMi00LjYxMywxMC4zMDItMTAuMzAydi0xMzUuOTlDOTAuODA3LDE0NS4wMTgsODYuMTk0LDE0MC40MDUsODAuNTA1LDE0MC40MDV6IE03MC4yMDMsMjc2LjM5NUgyMi44MTJWMTYxLjAxaDQ3LjM5MSAgIFYyNzYuMzk1eiIgZmlsbD0iIzkxREM1QSIvPgoJPHBhdGggZD0iTTE4Mi40OTgsMTA2LjQwN2gtNjcuOTk1Yy01LjY4OSwwLTEwLjMwMiw0LjYxMy0xMC4zMDIsMTAuMzAydjE2OS45ODhjMCw1LjY4OSw0LjYxMywxMC4zMDIsMTAuMzAyLDEwLjMwMmg2Ny45OTUgICBjNS42ODksMCwxMC4zMDItNC42MTMsMTAuMzAyLTEwLjMwMlYxMTYuNzFDMTkyLjgsMTExLjAyLDE4OC4xODcsMTA2LjQwNywxODIuNDk4LDEwNi40MDd6IE0xNzIuMTk1LDI3Ni4zOTVoLTQ3LjM5MVYxMjcuMDEyICAgaDQ3LjM5MVYyNzYuMzk1eiIgZmlsbD0iIzkxREM1QSIvPgoJPHBhdGggZD0iTTI4NC40OSw1NS40MTFoLTY3Ljk5NWMtNS42ODksMC0xMC4zMDIsNC42MTMtMTAuMzAyLDEwLjMwMnYyMjAuOTg0YzAsNS42ODksNC42MTMsMTAuMzAyLDEwLjMwMiwxMC4zMDJoNjcuOTk1ICAgYzUuNjg5LDAsMTAuMzAyLTQuNjEzLDEwLjMwMi0xMC4zMDJWNjUuNzEzQzI5NC43OTMsNjAuMDI0LDI5MC4xOCw1NS40MTEsMjg0LjQ5LDU1LjQxMXogTTI3NC4xODgsMjc2LjM5NWgtNDcuMzkxVjc2LjAxNmg0Ny4zOTEgICBWMjc2LjM5NXoiIGZpbGw9IiM5MURDNUEiLz4KCTxwYXRoIGQ9Ik0xOTguODE1LDcuMjQ4bC0zMC4yNDMtNi45ODJjLTUuNTQ4LTEuMjc4LTExLjA3NiwyLjE3Ny0xMi4zNTcsNy43MjFjLTEuMjgsNS41NDUsMi4xNzcsMTEuMDc2LDcuNzIxLDEyLjM1N2w1LjQzNiwxLjI1NSAgIEwxOS42NTksOTYuNDU0Yy01LjA5LDIuNTQ0LTcuMTUyLDguNzMzLTQuNjA4LDEzLjgyMmMxLjgwNSwzLjYxMSw1LjQ0Myw1LjY5Nyw5LjIyMyw1LjY5N2MxLjU0OCwwLDMuMTIxLTAuMzUsNC41OTktMS4wOSAgIGwxNTIuMDczLTc2LjAzN2wtMS40Nyw2LjM2NGMtMS4yOCw1LjU0NSwyLjE3NywxMS4wNzYsNy43MjEsMTIuMzU3YzAuNzgxLDAuMTgsMS41NTksMC4yNjYsMi4zMjcsMC4yNjYgICBjNC42ODksMCw4LjkyOS0zLjIyMiwxMC4wMy03Ljk4Nmw2Ljk4Mi0zMC4yNDNDMjA3LjgxNiwxNC4wNiwyMDQuMzU5LDguNTI5LDE5OC44MTUsNy4yNDh6IiBmaWxsPSIjOTFEQzVBIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+
+        <h3>Tops</h3>
+          <div class="groupes_items_tops">
+            <div class="items">
+              <div class="cercle_top"></div>
+              <div class="indice_top"></div>
+              <p>Livraison gratuite</p>
+            </div>
+            <div class="items">
+              <div class="price_top">
+                <p>89,00€</p>
+              </div>
+              <div class="indice_top"></div>
+              <p>Montant minimum pour une livraison gratuite</p>
+            </div>
+            <div class="items">
+              <div class="cercle_top"></div>
+              <div class="indice_top"></div>
+              <p>Visibilité de la livraison gratuite</p>
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="floops">
+          <img class="courbe_flopps" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI5NyAyOTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI5NyAyOTc7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KPGc+Cgk8cGF0aCBkPSJNMTg2LjQwMSwxMTcuNDg0Yy0yLjgzMi0yLjgzMS03LjA5LTMuNjc3LTEwLjc4OS0yLjE0NmMtMy42OTksMS41MzItNi4xMTEsNS4xNDItNi4xMTEsOS4xNDd2MTQzLjk4MiAgIGMwLDUuNDY3LDQuNDMzLDkuOSw5LjksOS45aDQxLjEzN2M1LjQ2NywwLDkuOS00LjQzMyw5LjktOS45VjE2NS42MjJjMC0yLjYyNi0xLjA0My01LjE0My0yLjg5OS03LjAwMUwxODYuNDAxLDExNy40ODR6ICAgIE0yMTAuNjM4LDI1OC41NjdoLTIxLjMzN1YxNDguMzg2bDIxLjMzNywyMS4zMzdWMjU4LjU2N3oiIGZpbGw9IiNEODAwMjciLz4KCTxwYXRoIGQ9Ik0xNDIuMDUyLDExNS4zMzhjLTMuNy0xLjUzLTcuOTU4LTAuNjg0LTEwLjc4OSwyLjE0NmwtNDEuMTM3LDQxLjEzOGMtMS44NTYsMS44NTctMi44OTksNC4zNzUtMi44OTksNy4wMDF2MTAyLjg0NCAgIGMwLDUuNDY3LDQuNDMzLDkuOSw5LjksOS45aDQxLjEzN2M1LjQ2NywwLDkuOS00LjQzMyw5LjktOS45VjEyNC40ODRDMTQ4LjE2MywxMjAuNDgsMTQ1Ljc1MSwxMTYuODcsMTQyLjA1MiwxMTUuMzM4eiAgICBNMTI4LjM2MywyNTguNTY3aC0yMS4zMzd2LTg4Ljg0M2wyMS4zMzctMjEuMzM4VjI1OC41Njd6IiBmaWxsPSIjRDgwMDI3Ii8+Cgk8cGF0aCBkPSJNMjEuODUxLDExNy40ODRjLTIuODMyLTIuODMxLTcuMDktMy42NzctMTAuNzg5LTIuMTQ2Yy0zLjY5OSwxLjUzMi02LjExMSw1LjE0Mi02LjExMSw5LjE0N3YxNDMuOTgyICAgYzAsNS40NjcsNC40MzMsOS45LDkuOSw5LjloNDEuMTM3YzUuNDY3LDAsOS45LTQuNDMzLDkuOS05LjlWMTY1LjYyM2MwLTIuNjI2LTEuMDQzLTUuMTQzLTIuODk5LTcuMDAxTDIxLjg1MSwxMTcuNDg0eiAgICBNNDYuMDg3LDI1OC41NjdIMjQuNzVWMTQ4LjM4NmwyMS4zMzcsMjEuMzM4VjI1OC41Njd6IiBmaWxsPSIjRDgwMDI3Ii8+Cgk8cGF0aCBkPSJNMjk2Ljg4OSwxMjkuOTU2bC02LjM1OS00Mi4xMTZjLTAuODE3LTUuNDA1LTUuODU2LTkuMTIxLTExLjI2Ny04LjMxMWMtNS40MDYsMC44MTYtOS4xMjgsNS44NjEtOC4zMTEsMTEuMjY3bDIuMzUsMTUuNTYyICAgTDE2Mi41NDgsMjAuNzAzYy0zLjY5OC0yLjg2LTguODg4LTIuNzQ0LTEyLjQ1NSwwLjI3N0w3Ny41NjMsODIuNDAxTDE2LjkwMSwyMS43MzljLTMuODY3LTMuODY1LTEwLjEzNC0zLjg2NS0xNC4wMDEsMCAgIGMtMy44NjYsMy44NjYtMy44NjYsMTAuMTM1LDAsMTQuMDAxbDY3LjEwNiw2Ny4xMDVjMy42NDIsMy42NDIsOS40NjgsMy44ODIsMTMuMzk5LDAuNTU0bDczLjM2OC02Mi4xMzJsMTAzLjU4OCw4MC4xMTQgICBsLTE2LjE1Mi0wLjA5M2MtNS40NzUtMC4wMjEtOS45MjYsNC4zNzYtOS45NTcsOS44NDNjLTAuMDMxLDUuNDY4LDQuMzc2LDkuOTI1LDkuODQzLDkuOTU3bDQyLjk0OCwwLjI0NmMwLjAxOSwwLDAuMDM4LDAsMC4wNTcsMCAgIGMyLjg3MiwwLDUuNjA1LTEuMjQ4LDcuNDg2LTMuNDIxQzI5Ni40OCwxMzUuNzI0LDI5Ny4zMjEsMTMyLjgxOCwyOTYuODg5LDEyOS45NTZ6IiBmaWxsPSIjRDgwMDI3Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+          <h3>Floops</h3>
+          <div class="groupes_items_floops">
+            <div class="items">
+              <div class="cercle_floops"></div>
+              <div class="indice_floop"></div>
+              <p>Livraison gratuite</p>
+            </div>
+            <div class="items">
+              <div class="price_floops">
+                <p>BAD</p>
+              </div>
+              <div class="indice_floop"></div>
+              <p>Montant minimum pour une livraison gratuite</p>
+            </div>
+            <div class="items">
+              <div class="cercle_floops"></div>
+              <div class="indice_floop"></div>
+              <p>Visibilité de la livraison gratuite</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="criteres">
+          <h3>Critéres</h3>
+          <div class="groupes_items_criteres">
+            <div class="items">
+              <div class="cercle_top"></div>
+              <div class="indice_top"></div>
+              <p>Livraison gratuite</p>
+            </div>
+            <div class="items">
+              <div class="price_top">
+                <p>GOOD</p>
+              </div>
+              <div class="indice_top"></div>
+              <p>Livraison gratuite</p>
+            </div>
+            <div class="items">
+              <div class="price_top">
+                <p>GOOD</p>
+              </div>
+              <div class="indice_neutre"></div>
+              <p>Livraison gratuite</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
   </div>
   <script type="text/javascript" src="showhide.js"></script>
 </body>
