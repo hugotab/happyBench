@@ -28,11 +28,16 @@ a:hover {
 .button_retour img{
   float: left;
   padding-right: 10px;
-  padding-top: 3px;
+  padding-top: 5px;
 }
 
 .titre_marque {
   padding-bottom: 30px;
+}
+
+.titre_marque h1{
+  font-weight: bold;
+  font-size: 28px;
 }
 
 .logo img{
@@ -42,34 +47,45 @@ float: right;
 margin-top: -25px;
 }
 
+.header_chapitre{
+  -moz-box-shadow: 0px 5px 5px 0px #F2F2F2;
+-webkit-box-shadow: 0px 5px 5px 0px #F2F2F2;
+-o-box-shadow: 0px 5px 5px 0px #F2F2F2;
+box-shadow: 0px 5px 5px 0px #F2F2F2;
+}
+
 .chapitre {
   padding: 50px 100px 50px 75px;
 }
 
-.nom_chapitre {
-  padding-bottom: 50px;
+.nom_chapitre .title p{
+  font-weight: bold;
+  padding-top: 8px;
+  font-size: 32px;
 }
 
 .cercle_note_lien {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #28B463;
+  background: #4CC079;
   padding-left: 25px;
   float: right;
+  margin-top: 10px;
 }
 
 .cercle_note_lien p {
   font-size: 31px;
   margin-left: -10px;
   color: #ffff;
+  display: inline;
 }
 
 .ligne {
-  border-color: #E3E3E3;
+  border-color: #F8F8F8;
   border-width: 0 0 1px;
   border-style: solid;
-  padding-top: 25px;
+  padding-top: 10px;
 }
 
 .header_chapitre {
@@ -82,7 +98,6 @@ margin-top: -25px;
   height: 75px;
   display: block;
 }
- 
 
 .tops {
   padding-top: 50px;
@@ -91,6 +106,7 @@ margin-top: -25px;
 .courbe_tops{
   float: left;
   padding-right: 10px;
+  padding-top: 3px;
 }
 
 .courbe_flopps{
@@ -99,37 +115,76 @@ margin-top: -25px;
   padding-top: 5px;
 }
 
-.items {
-  border-width: 0.5px;
+.tops{
+    font-weight: bold;
+}
+
+.tops p{
+  font-size: 20px;
+  padding-top: 2px;
+}
+
+.floops{
+    font-weight: bold;
+}
+
+.floops p{
+  font-size: 20px;
+}
+
+.criteres  {
+  font-weight: bold;
+}
+
+.criteres p{
+  font-size: 20px;
+}
+
+.items:first-child {
+  border-width: 0.5px 0.5px 0.1px 0.5px;
   border-style: solid;
-  border-radius: 5px;
+  border-radius: 5px 5px 0  5px;
+  border-color: #A8A8A8;
+}
+
+.items {
+  border-width: 0.5px 0.5px 0.1px 0.5px;
+  border-style: solid;
+  border-radius: 5px 0px 0 5px;
+  border-color: #A8A8A8;
+}
+
+.items:last-child {
+  border-width: 0.5px 0.5px 0.5px 0.5px;
+  border-style: solid;
+  border-radius: 5px 0px 5px 5px;
   border-color: #A8A8A8;
 }
 
 .indice_top {
   width: 10px;
-  height: 55px;
+  height: 53px;
   -webkit-border-top-left-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-bottomleft: 5px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  background: #28B463;
+  background: #4CC079;
   margin-right: 20px;
   float: left;
 }
 
 .indice_floop {
   width: 10px;
-  height: 55px;
+  height: 53px;
   -webkit-border-top-left-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-bottomleft: 5px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  background: #FF0000;
+  background: #FF6785;
   margin-right: 20px;
   float: left;
 }
@@ -138,14 +193,14 @@ margin-top: -25px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #28B463;
+  background: #4CC079;
   float: right;
   margin-top: 13px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .price_top {
-  color: #28B463;
+  color: #4CC079;
   float: right;
   margin-right: 10px;
   font-weight: bold;
@@ -155,14 +210,14 @@ margin-top: -25px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #FF0000;
+  background: #FF6785;
   float: right;
   margin-top: 13px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .price_floops {
-  color: #FF0000;
+  color: #FF6785;
   float: right;
   margin-right: 10px;
   font-weight: bold;
@@ -170,43 +225,34 @@ margin-top: -25px;
 
 .indice_neutre{
   width: 10px;
-  height: 55px;
+  height: 53px;
   -webkit-border-top-left-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-bottomleft: 5px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  background: #FFEF00;
+  background: #FFE757;
   margin-right: 20px;
   float: left;
 }
 
-.groupes_items_tops {
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
 .groupes_items_tops p {
   padding-top: 15px;
-}
-
-.groupes_items_floops {
-  padding-top: 10px;
-  padding-bottom: 20px;
+  font-size: 15px;
+  padding-right: 20px;
 }
 
 .groupes_items_floops p {
   padding-top: 15px;
-}
-
-.groupes_items_criteres {
-  padding-top: 10px;
-  padding-bottom: 20px;
+  font-size: 15px;
+  padding-right: 20px;
 }
 
 .groupes_items_criteres p {
   padding-top: 15px;
+  font-size: 15px;
+  padding-right: 20px;
 }
 
 
